@@ -78,6 +78,9 @@ type MapSpec struct {
 
 	// The key and value type of this map. May be nil.
 	Key, Value btf.Type
+
+	// The name of the ELF section this map was located at
+	SectionName string
 }
 
 func (ms *MapSpec) String() string {
